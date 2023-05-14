@@ -1,0 +1,5 @@
+{
+  "subscriberId": {{Table1.selectedRow.subscriberId}},
+  "subscriberName": {{Table1.selectedRow.subscriberName}},
+  "subscriberAge": {{Table1.selectedRow.subscriberAge}}
+}

@@ -1,0 +1,368 @@
+{
+  "unpublishedPage": {
+    "name": "Page2",
+    "slug": "page2",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 410,
+          "containerStyle": "none",
+          "snapRows": 50,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 520,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 11,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "primaryColumns.subscriberId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.subscriberName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.subscriberAge.computedValue"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "tableData"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 1,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "1.5rem",
+              "columnUpdatedAt": 1684061623962,
+              "primaryColumnId": "subscriberId",
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "mobileBottomRow": 40,
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "subscriberId",
+                "subscriberName",
+                "subscriberAge",
+                "EditActions1"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                }
+              ],
+              "compactMode": "DEFAULT",
+              "displayName": "Table",
+              "bottomRow": 41,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 37,
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
+                }
+              ],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "subscriberId": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "subscriberId",
+                  "id": "subscriberId",
+                  "alias": "subscriberId",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "subscriberId",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"subscriberId\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "subscriberName": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "subscriberName",
+                  "id": "subscriberName",
+                  "alias": "subscriberName",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "subscriberName",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"subscriberName\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "subscriberAge": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "subscriberAge",
+                  "id": "subscriberAge",
+                  "alias": "subscriberAge",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "subscriberAge",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"subscriberAge\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "right",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "1.5rem",
+                  "discardBorderRadius": "1.5rem",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+                  "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+                  "onSave": "{{putapi.run();\ngetapi.run()}}"
+                }
+              },
+              "key": "ttnelzjgmx",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 35,
+              "textSize": "0.875rem",
+              "widgetId": "r6a1sczjlm",
+              "minWidth": 450,
+              "tableData": "{{getapi.data}}\n",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 12,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 3,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "mobileBottomRow": 9,
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 5,
+              "bottomRow": 9,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 16,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Subscriber List",
+              "key": "de00zx2x32",
+              "isDeprecated": false,
+              "rightColumn": 17,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "4bpo6jhlb4",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 5,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 0,
+              "maxDynamicHeight": 9000,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page2_getapi",
+              "name": "getapi",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Page2",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "64607b008dfd9150bb9ee697_6460b1dc6f08b7679e0f2c51"
+}
